@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow import keras
 import random
 
-from quantize import quantize
+from .quantize import quantize
 
 class CustomModelList(list):
     def fed_avg(self, x, y, metric, central_server):
